@@ -3,17 +3,17 @@ import pickle
 from streamlit_option_menu import option_menu
 import os
 
-st.set_page_config(page_title="Health Assistant",
+st.set_page_config(page_title="Health Disease Assistant",
                    layout="wide",
                    page_icon="🧑‍⚕️") 
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-diabetes_model = pickle.load(open('C:/Python/Multiple Disease Prediction/diabetes_model.sav', 'rb'))
+diabetes_model = pd.read_csv(''C:\Python\Multiple Disease Prediction\diabetes.csv'')
 
-heart_model = pickle.load(open('C:/Python/Multiple Disease Prediction/heart_model.sav', 'rb'))
+heart_model = pd.read_csv('C:\Python\Multiple Disease Prediction\heart (1).csv')
 
-Parkinsons_model = pickle.load(open('C:/Python/Multiple Disease Prediction/Parkinsons_model.sav', 'rb'))
+Parkinsons_model = pd.read_csv(C:\Python\Multiple Disease Prediction\parkinsons.csv'')
 
 
 #sidebar for navigate 
